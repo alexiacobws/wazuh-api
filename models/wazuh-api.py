@@ -191,6 +191,7 @@ if __name__ == "__main__":
             'DELETE/agents/:agent_id': Agent.remove_agent,
             'DELETE/agents/': Agent.remove_agent,
             # Groups
+            '/agents/unassigned': Agent.get_agents_unassigned,
             '/agents/groups': Agent.get_all_groups,
             '/agents/groups/:group_id': Agent.get_agent_group,
             '/agents/groups/:group_id/configuration':configuration.get_agent_conf,
